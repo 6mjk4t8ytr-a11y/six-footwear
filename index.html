@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIX FOOTWEAR</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f3ee;color:#111}
+header{background:#111;color:white;padding:25px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:bold;letter-spacing:3px}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:12px}
+.hero{background:#111;color:white;padding:90px 8%;min-height:400px}
+.hero p{letter-spacing:4px;color:#bbb;margin-bottom:25px;font-size:12px}
+h1{font-size:clamp(48px,9vw,85px);line-height:1}
+.hero .desc{letter-spacing:0;line-height:1.8;margin-top:25px;color:#ddd}
+.btn{display:inline-block;background:white;color:black;padding:15px 24px;margin-top:25px;text-decoration:none;font-size:12px;font-weight:bold}
+.section{padding:65px 7%}
+.section h2{font-size:32px;margin-bottom:12px}
+.subtitle{color:#777;margin-bottom:30px;font-size:13px}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.card{background:white;padding-bottom:18px}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.card h3{font-size:15px;margin:15px 12px 8px}
+.card p{margin:0 12px;font-weight:bold}
+.card button{background:#111;color:white;border:0;padding:12px;margin:15px 12px 0;cursor:pointer}
+.about{background:#e7e4de;padding:60px 8%;text-align:center}
+.about p{margin-top:15px;line-height:1.8;color:#555}
+footer{background:#111;color:white;text-align:center;padding:30px;font-size:12px;line-height:2}
+@media(max-width:650px){
+ header{flex-direction:column;gap:18px}
+ nav a{margin:0 7px}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .section{padding:45px 4%}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SIX FOOTWEAR.</div>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#shop">SHOP</a>
+    <a href="#about">ABOUT</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <p>THE ART OF EVERY STEP</p>
+  <h1>WALK YOUR<br>OWN WAY.</h1>
+  <p class="desc">Discover your style. Find your perfect pair.</p>
+  <a class="btn" href="#shop">EXPLORE COLLECTION ↗</a>
+</section>
+
+<section class="section" id="shop">
+  <h2>OUR COLLECTION</h2>
+  <p class="subtitle">Premium styles for every step.</p>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Sneakers">
+      <h3>Street Sneakers</h3><p>৳ 2,500</p>
+      <button onclick="alert('Contact us to order Street Sneakers!')">ORDER NOW</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80" alt="Casual shoes">
+      <h3>Casual Shoes</h3><p>৳ 2,200</p>
+      <button onclick="alert('Contact us to order Casual Shoes!')">ORDER NOW</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=600&q=80" alt="Formal shoes">
+      <h3>Formal Shoes</h3><p>৳ 3,200</p>
+      <button onclick="alert('Contact us to order Formal Shoes!')">ORDER NOW</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Heels">
+      <h3>Elegant Heels</h3><p>৳ 2,800</p>
+      <button onclick="alert('Contact us to order Elegant Heels!')">ORDER NOW</button>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>MORE THAN JUST SHOES.</h2>
+  <p>About Six Footwear
+
+At Six Footwear, we believe every step should make a statement. We bring together modern design, timeless style, and everyday comfort to create footwear for every occasion.
+
+From classic sneakers to elegant formal shoes, discover styles that match your personality.
+
+Step into your style. Walk with confidence.</p>
+</section>
+
+<footer>
+  <h2>SIX FOOTWEAR.</h2>
+  <p>STEP INTO YOUR OWN.</p>
+  <p>Contact Us
+
+Email: sixfootwear@gmail.com
+Phone: +880 1XXXXXXXXX
+
+Our Address
+
+Location: Bairob, Bangladesh</p>
+</footer>
+</body>
+</html>
